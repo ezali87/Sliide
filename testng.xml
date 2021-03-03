@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+
+
+ <test  name="Login Cases 1-3">
+    <classes>
+      <class name="SliideCXapp.Login"/> 
+    
+      
+    </classes>
+    
+    
+  </test> <!-- Test -->
+
+  
+  <test name="Validating Login User">
+      <classes>
+  
+      <class name="SliideCXapp.Vallidating_LoggedInUser"/>
+      
+      </classes>
+  </test>
+ 
+   
+  <test name="Verifying Redirections">
+      <classes>
+  
+      <class name="SliideCXapp.VerifyingRedirection"/>
+      
+      </classes>
+  </test>
+ 
+ 
+<test name="InternalConnection">
+      <classes>
+  
+      <class name="SliideCXapp.InternalConnection"/>
+      
+      </classes>
+  </test>
+  
+   
+<test name="No Internet Connection">
+      <classes>
+  
+      <class name="SliideCXapp.NoConnectionn"/>
+      
+      </classes>
+  </test>
+  
+  
+  
+  
+</suite> <!-- Suite -->
