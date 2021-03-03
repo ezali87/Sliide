@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="Prod.ExtentReportsListeners"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name="Validating Saving Accounts Page(failed)">
+    <classes>
+      <class name="Prod.Prod_Saving">
+        <methods>
+          <include name="tearDown"/>
+          <include name="baseSavingPage"/>
+          <include name="initializa"/>
+        </methods>
+      </class> <!-- Prod.Prod_Saving -->
+    </classes>
+  </test> <!-- Validating Saving Accounts Page(failed) -->
+  <test thread-count="5" verbose="0" name="Validating Prepaid Page(failed)">
+    <classes>
+      <class name="Prod.Prod_Prepaid">
+        <methods>
+          <include name="initializa"/>
+          <include name="basePrepaidPage"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Prod.Prod_Prepaid -->
+    </classes>
+  </test> <!-- Validating Prepaid Page(failed) -->
+  <test thread-count="5" verbose="0" name="Validating Carloans(failed)">
+    <classes>
+      <class name="Prod.Prod_Carloans">
+        <methods>
+          <include name="basePrepaidPage"/>
+          <include name="initializa"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Prod.Prod_Carloans -->
+    </classes>
+  </test> <!-- Validating Carloans(failed) -->
+</suite> <!-- Failed suite [Suite] -->
